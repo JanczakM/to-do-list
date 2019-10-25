@@ -10,8 +10,23 @@ export const settings = {
     defaultText: 'Search...',
     icon: 'search',
   },
+  header: {
+    headerIcon: 'ghost',
+  },
   defaultListDescription: '<p>I can do all the things!!!</p>',
   defaultColumnIcon: 'list-alt',
+};
+
+export const faqPage = {
+  title: 'FAQ',
+  img: 'https://image.freepik.com/free-photo/tropical-green-leaves-background_53876-88891.jpg',
+  content: '<h2>FAQ</h2> <p><h3>Question 1</h3> <p>Answer1</p> <h3>Question 2</h3></p> <p>Answer 2</p>',
+};
+
+export const infoPage = {
+  title: 'info about app author',
+  img: 'https://image.freepik.com/free-photo/abstract-background-with-low-poly-design_1048-8478.jpg',
+  content: '<h2>Info</h2><p>I am the app author</p>',
 };
 
 export const pageContents = {

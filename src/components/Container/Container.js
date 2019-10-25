@@ -2,25 +2,18 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './Container.scss';
 
-class Container extends React.Component {
+const Container = ({children}) => (
+  <div className={styles.component}>
+    {children}
+  </div>
+);
 
-  static propTypes = {
-    children: PropTypes.node,
-  }
+Container.propTypes = {
+  children: PropTypes.node,
+};
 
-  static defaultProps = {
-    children: <p>Hello world!</p>,
-  }
-
-  render() {
-
-    return (
-      <div className={styles.component}>
-        {this.props.children}
-      </div>
-    );
-  }
-
-}
+Container.defaultProps = {
+  children: <p>Hello world!</p>,
+};
 
 export default Container;
