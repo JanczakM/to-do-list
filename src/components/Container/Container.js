@@ -12,8 +12,4 @@ Container.propTypes = {
   children: PropTypes.node,
 };
 
-Container.defaultProps = {
-  children: <p>Hello world!</p>,
-};
-
 export default Container;

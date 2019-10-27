@@ -94,6 +94,18 @@ const lists = [
     description: 'Interesting things I want to check out!',
     image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
   },
+  {
+    id: 'list-2',
+    title: 'Lower priorities',
+    description: 'Things that can wait',
+    image: 'https://images.unsplash.com/photo-1564822121343-ef408cd4a99d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1325&q=80',
+  },
+  {
+    id: 'list-3',
+    title: 'Nice to have',
+    description: 'Things that i can do later',
+    image: 'https://images.unsplash.com/photo-1531768758921-efe347c05370?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80',
+  },
 ];
 
 const columns = [
