@@ -4,7 +4,7 @@ import styles from './List.scss';
 import Hero from '../Hero/Hero.js';
 import Column from '../Column/ColumnContainer.js';
 import Creator from '../Creator/Creator.js';
-import Container from '../Container/Container';
+import Container from '../Container/Container.js';
 import {settings} from '../../data/dataStore';
 import ReactHtmlParser from 'react-html-parser';
 
@@ -52,15 +52,16 @@ class List extends React.Component {
         <div className={styles.description}>
           {ReactHtmlParser(description)}
         </div>
-        <Container />
-        <div className={styles.columns}>
-          {columns.map(columnData => (
-            <Column key={columnData.id} {...columnData} />
-          ))}
-        </div>
-        <div className={styles.creator}>
-          <Creator text={settings.columnCreatorText} action={addColumn} />
-        </div>
+        <Container>
+          <div className={styles.columns}>
+            {columns.map(columnData => (
+              <Column key={columnData.id} {...columnData} />
+            ))}
+          </div>
+          <div className={styles.creator}>
+            <Creator text={settings.columnCreatorText} action={addColumn} />
+          </div>
+        </Container>
       </section>
     );
   }
